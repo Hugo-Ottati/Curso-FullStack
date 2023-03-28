@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header#cabecalho {
+  margin-top: 60px;
+  text-align: center;
+}
+
+main#principal {
+  width: 70vw;
+  height: 600px;
+  margin: auto;
+  background-color: grey;
+  border-radius: 10px;
+  position: relative;
+}
+
+main#principal div.quadrado {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 10px;
+  display: inline-block;
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  overflow: scroll;
+}
