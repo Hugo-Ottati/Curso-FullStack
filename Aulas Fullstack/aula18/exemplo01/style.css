@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header#cabecalho {
+  margin-top: 60px;
+  text-align: center;
+}
+
+main#principal {
+  width: 80vw;
+  height: 800px;
+  margin: auto;
+  background-color: grey;
+  border-radius: 10px;
+  position: relative;
+  opacity: 1;
+  /*background: url(./Biohazard_orange.svg.png) no-repeat center;*/
+  background-size: cover;
+  /* background: linear-gradient(to bottom left, #5D576B,#6DA34D); */
+}
+
+main#principal div.quadrado {
+  width: 50%;
+  height: 350px;
+  background-color: red;
+  border-radius: 10px;
+  display: inline-block;
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  overflow: scroll;
+  opacity: 0.9;
+  /*background: url(./giphy.gif), no-repeat center;*/
+  background-size: cover;
+  /* background-image: linear-gradient(to right, cyan,#C5E99B) */
+  background: radial-gradient(red,green,blue);
+}
