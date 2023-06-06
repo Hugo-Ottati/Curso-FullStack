@@ -1,0 +1,15 @@
+header.container-fluid {
+    background-color: blue;
+}
+
+div.formulario {
+    background-color: pink;
+
+}
+
+
+footer.rodape {
+background-color: pink;
+text-align: center;
+font-size: 17.5px;
+}
