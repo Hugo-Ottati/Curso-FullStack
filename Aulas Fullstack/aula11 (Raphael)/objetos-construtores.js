@@ -11,7 +11,7 @@ function Pessoa (id, nome, sobrenome, idade, identidade) {
   }
 }
 
-let pessoa1 = new Pessoa(001, "Raphael", "Rodrigues", "31", "371...");
+let pessoa1 = new Pessoa(1, "Raphael", "Rodrigues", "31", "371...");
 
 console.log(pessoa1.idade, pessoa1.nome, pessoa1.identidade);
 
