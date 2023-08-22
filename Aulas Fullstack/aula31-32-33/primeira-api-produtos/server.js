@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-const produtos = [
+let produtos = [
   {
     id: 1,
     nome: "Pregos",
@@ -54,7 +54,7 @@ app.post("/produtos", (req, res) => {
 });
 
 app.put("/produtos/:id", (req, res) => {
-  const id = Number([req.params.id]);
+  const id = Number(req.params.id);
   const { nome, preco } = req.body;
   const index = produtos.findIndex((el) => el.id === id);
   if (index !== -1) {
@@ -66,7 +66,7 @@ app.put("/produtos/:id", (req, res) => {
 });
 
 app.delete("/produtos/:id", (req, res) => {
-  const id = Number([req.params.id]);
+  const id = Number(req.params.id);
   produtos = produtos.filter((el => el.id !== id));
   res.sendStatus(204);
 })
