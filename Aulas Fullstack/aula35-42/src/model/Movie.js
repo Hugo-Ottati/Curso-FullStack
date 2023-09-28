@@ -1,4 +1,4 @@
-const {Model, DataTypes} = require("sequelize");
+const { Model, DataTypes } = require("sequelize");
 
 class Movie extends Model {
     static init(connection){
@@ -12,7 +12,7 @@ class Movie extends Model {
             sequelize:connection;
             schema:"public";
             tableName: "movies";
-            createdAt: "criadoeEm";
+            createdAt: "criadoEm";
             updatedAt: "atualizadoEm";
             timestamps: true;
             underscored: false;
